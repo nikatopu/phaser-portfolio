@@ -23,4 +23,10 @@ export const games: GameMeta[] = [
     description: "Classic snake built with Phaser 3.",
     image: "/images/snake-cover.jpg",
   },
+  {
+    slug: "dialogue",
+    title: "Dialogue System",
+    description: "Branching dialogue with keyboard and mouse controls.",
+    image: "/images/dialogue-cover.jpg",
+  },
 ];
