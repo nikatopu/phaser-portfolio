@@ -7,9 +7,12 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-6">Phaser Mini-Games</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {games.map((game) => (
-          <GameCard key={game.slug} {...game} />
-        ))}
+        {games
+          .slice()
+          .reverse()
+          .map((game) => (
+            <GameCard key={game.slug} {...game} />
+          ))}
       </div>
     </main>
   );
